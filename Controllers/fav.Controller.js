@@ -11,7 +11,7 @@ let seedData = async (req, res) => {
             title: e.title,
             dateCreated: e.dateCreated,
             description: e.description,
-            imageUrl: e.imageUrlg
+            imageUrl: e.imageUrl,
         })
     })
     cleanedData.map(e => { e.save() });
