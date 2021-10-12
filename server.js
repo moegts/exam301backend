@@ -32,9 +32,9 @@ app.post('/seedData', seedData )
 app.get('/getData', getData)
 app.post('/checkUser/:email', checkUser)
 app.get('/getUserData/:email', getUserData)
-app.get('/addToFav/:id/:email', addToFav)
-app.get('/deleteItem/:id/:email', deleteItem)
-app.get('/updateItem/:id/:email', updateItem)
+app.patch('/addToFav/:id/:email', addToFav)
+app.delete('/deleteItem/:id/:email', deleteItem)
+app.patch('/updateItem/:id/:email', updateItem)
  
 app.listen(PORT, console.log(`port is running on ${PORT}`))
 
